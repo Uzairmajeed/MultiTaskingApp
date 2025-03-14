@@ -26,13 +26,14 @@ object PoseDetectionScreen : Screen()
 object SelfieSegmentationScreen : Screen()
 
 @Serializable
-object ObjectRecognitionScreen : Screen()
-
-@Serializable
 object DocumentScannerScreen : Screen()
 
 @Serializable
 object ImageProcessingScreen : Screen()
 
 @Serializable
-object AudioAnalysisScreen : Screen()
+object DigitalInkRecognitionScreen : Screen()
+
+
+
+

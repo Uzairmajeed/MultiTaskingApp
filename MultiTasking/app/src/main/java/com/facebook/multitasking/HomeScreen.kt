@@ -27,19 +27,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.facebook.multitasking.Navigation.AudioAnalysisScreen
+import com.facebook.multitasking.Navigation.DigitalInkRecognitionScreen
 import com.facebook.multitasking.Navigation.DocumentScannerScreen
 import com.facebook.multitasking.Navigation.FaceMeshDetectionScreen
 import com.facebook.multitasking.Navigation.FaceRecognitionScreen
 import com.facebook.multitasking.Navigation.ImageProcessingScreen
-import com.facebook.multitasking.Navigation.ObjectRecognitionScreen
 import com.facebook.multitasking.Navigation.PoseDetectionScreen
 import com.facebook.multitasking.Navigation.Screen
 import com.facebook.multitasking.Navigation.SelfieSegmentationScreen
 import com.facebook.multitasking.Navigation.TextRecognitionScreen
 import com.facebook.multitasking.Navigation.route
-import com.facebook.multitasking.Screens.FaceMeshDetectionScreen
-import com.facebook.multitasking.Screens.SelfieSegmentationScreen
+import com.facebook.multitasking.Screens.DigitalInkRecognitionScreen
+
 
 data class FeatureData(
     val title: String,
@@ -85,16 +84,9 @@ fun HomeScreen(navController: NavController) {
         FeatureData(
             title = " Selfie Segmentation",
             icon = Icons.Default.PeopleOutline,
-            startColor = Color(0xFF614385),
+            startColor = Color(0xFF00B4DB),
             endColor = Color(0xFFF0016),
             screen = SelfieSegmentationScreen
-        ),
-        FeatureData(
-            title = "Object Recognition",
-            icon = Icons.Default.CameraAlt,
-            startColor = Color(0xFF614385),
-            endColor = Color(0xFF516395),
-            screen = ObjectRecognitionScreen
         ),
         FeatureData(
             title = "Document Scanner",
@@ -110,13 +102,14 @@ fun HomeScreen(navController: NavController) {
             endColor = Color(0xFF0083B0),
             screen = ImageProcessingScreen
         ),
+
         FeatureData(
-            title = "Audio Analysis",
-            icon = Icons.Default.AudioFile,
-            startColor = Color(0xFFED213A),
-            endColor = Color(0xFF93291E),
-            screen = AudioAnalysisScreen
-        )
+            title = "Ink Recognizable",
+            icon = Icons.Default.Image,
+            startColor = Color(0xFF614385),
+            endColor = Color(0xFFF0016),
+            screen = DigitalInkRecognitionScreen
+        ),
     )
 
     Scaffold(

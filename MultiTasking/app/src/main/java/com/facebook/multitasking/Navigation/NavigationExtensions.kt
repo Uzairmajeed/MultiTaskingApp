@@ -14,10 +14,9 @@ fun Screen.route(): String {
         is FaceMeshDetectionScreen -> "face_mesh_detection"
         is PoseDetectionScreen -> "pose_detection"
         is SelfieSegmentationScreen -> " selfie_segmentation"
-        is ObjectRecognitionScreen -> "object_recognition"
         is DocumentScannerScreen -> "document_scanner"
         is ImageProcessingScreen -> "image_processing"
-        is AudioAnalysisScreen -> "audio_analysis"
+        is DigitalInkRecognitionScreen-> "ink_recognitions"
     }
 }
 
@@ -37,10 +36,10 @@ inline fun <reified T : Screen> NavGraphBuilder.composable(
         FaceMeshDetectionScreen::class -> "face_mesh_detection"
         PoseDetectionScreen::class -> "pose_detection"
         SelfieSegmentationScreen::class -> " selfie_segmentation"
-        ObjectRecognitionScreen::class -> "object_recognition"
         DocumentScannerScreen::class -> "document_scanner"
         ImageProcessingScreen::class -> "image_processing"
-        AudioAnalysisScreen::class -> "audio_analysis"
+        DigitalInkRecognitionScreen::class-> "ink_recognitions"
+
         else -> throw IllegalArgumentException("Unknown screen class: ${T::class}")
     }
 

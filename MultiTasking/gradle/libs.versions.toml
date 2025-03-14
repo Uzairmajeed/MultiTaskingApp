@@ -1,8 +1,10 @@
 [versions]
 agp = "8.5.2"
 coilCompose = "2.4.0"
+digitalInkRecognition = "18.1.0"
 faceDetection = "16.1.7"
 faceMeshDetection = "16.0.0-beta3"
+imageLabeling = "17.0.9"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -14,7 +16,9 @@ composeBom = "2024.04.01"
 
 composeNavigation = "2.8.0-alpha08"
 materialIconsExtended = "1.7.8"
+playServicesMlkitDocumentScanner = "16.0.0-beta1"
 playServicesMlkitFaceDetection = "17.1.0"
+playServicesMlkitImageLabeling = "16.0.8"
 poseDetection = "18.0.0-beta5"
 poseDetectionAccurate = "18.0.0-beta5"
 segmentationSelfie = "16.0.0-beta6"
@@ -25,8 +29,10 @@ textRecognition = "16.0.1"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+digital-ink-recognition = { module = "com.google.mlkit:digital-ink-recognition", version.ref = "digitalInkRecognition" }
 face-detection = { module = "com.google.mlkit:face-detection", version.ref = "faceDetection" }
 face-mesh-detection = { module = "com.google.mlkit:face-mesh-detection", version.ref = "faceMeshDetection" }
+image-labeling = { module = "com.google.mlkit:image-labeling", version.ref = "imageLabeling" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -43,7 +49,9 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
+play-services-mlkit-document-scanner = { module = "com.google.android.gms:play-services-mlkit-document-scanner", version.ref = "playServicesMlkitDocumentScanner" }
 play-services-mlkit-face-detection = { module = "com.google.android.gms:play-services-mlkit-face-detection", version.ref = "playServicesMlkitFaceDetection" }
+play-services-mlkit-image-labeling = { module = "com.google.android.gms:play-services-mlkit-image-labeling", version.ref = "playServicesMlkitImageLabeling" }
 pose-detection = { module = "com.google.mlkit:pose-detection", version.ref = "poseDetection" }
 pose-detection-accurate = { module = "com.google.mlkit:pose-detection-accurate", version.ref = "poseDetectionAccurate" }
 segmentation-selfie = { module = "com.google.mlkit:segmentation-selfie", version.ref = "segmentationSelfie" }

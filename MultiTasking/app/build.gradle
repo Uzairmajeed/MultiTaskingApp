@@ -103,4 +103,14 @@ dependencies {
 
     implementation libs.segmentation.selfie
 
+    implementation libs.play.services.mlkit.document.scanner
+
+    implementation libs.image.labeling
+
+    // OR for using the dynamically downloaded model
+     implementation libs.play.services.mlkit.image.labeling
+
+    implementation libs.digital.ink.recognition
+
+
 }

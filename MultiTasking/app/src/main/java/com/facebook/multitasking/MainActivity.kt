@@ -11,8 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.facebook.multitasking.Navigation.*
+import com.facebook.multitasking.Screens.DigitalInkRecognitionScreen
+import com.facebook.multitasking.Screens.DocumentScannerScreen
 import com.facebook.multitasking.Screens.FaceMeshDetectionScreen
 import com.facebook.multitasking.Screens.FaceRecognitionScreen
+import com.facebook.multitasking.Screens.ImageProcessingScreen
 import com.facebook.multitasking.Screens.PoseDetectionScreen
 import com.facebook.multitasking.Screens.SelfieSegmentationScreen
 import com.facebook.multitasking.Screens.TextRecognitionScreen
@@ -59,10 +62,6 @@ class MainActivity : ComponentActivity() {
                             SelfieSegmentationScreen(navController = navController)
                         }
 
-                        composable<ObjectRecognitionScreen> {
-                            ObjectRecognitionScreen(navController = navController)
-                        }
-
                         composable<DocumentScannerScreen> {
                             DocumentScannerScreen(navController = navController)
                         }
@@ -71,9 +70,12 @@ class MainActivity : ComponentActivity() {
                             ImageProcessingScreen(navController = navController)
                         }
 
-                        composable<AudioAnalysisScreen> {
-                            AudioAnalysisScreen(navController = navController)
+                        composable<DigitalInkRecognitionScreen> {
+                            DigitalInkRecognitionScreen(navController = navController)
                         }
+
+
+
                     }
                 }
             }

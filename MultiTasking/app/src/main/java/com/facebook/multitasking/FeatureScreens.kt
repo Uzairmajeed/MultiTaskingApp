@@ -19,56 +19,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 
-
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun ObjectRecognitionScreen(navController: NavController) {
-    FeatureScreenTemplate(
-        title = "Object Recognition",
-        navController = navController
-    ) {
-        // Feature-specific content will go here
-        Text("Object Recognition feature coming soon!")
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun DocumentScannerScreen(navController: NavController) {
-    FeatureScreenTemplate(
-        title = "Document Scanner",
-        navController = navController
-    ) {
-        // Feature-specific content will go here
-        Text("Document Scanner feature coming soon!")
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun ImageProcessingScreen(navController: NavController) {
-    FeatureScreenTemplate(
-        title = "Image Processing",
-        navController = navController
-    ) {
-        // Feature-specific content will go here
-        Text("Image Processing feature coming soon!")
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun AudioAnalysisScreen(navController: NavController) {
-    FeatureScreenTemplate(
-        title = "Audio Analysis",
-        navController = navController
-    ) {
-        // Feature-specific content will go here
-        Text("Audio Analysis feature coming soon!")
-    }
-}
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FeatureScreenTemplate(
