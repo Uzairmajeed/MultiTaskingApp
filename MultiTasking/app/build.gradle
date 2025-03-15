@@ -112,5 +112,8 @@ dependencies {
 
     implementation libs.digital.ink.recognition
 
+    // Add this dependency for Google Fonts
+    implementation libs.androidx.ui.text.google.fonts  // Use the same version as your other Compose dependencies
+
 
 }

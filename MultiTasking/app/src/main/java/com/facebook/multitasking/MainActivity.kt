@@ -10,6 +10,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.facebook.multitasking.ui.theme.AppTheme
 import com.facebook.multitasking.Navigation.*
 import com.facebook.multitasking.Screens.DigitalInkRecognitionScreen
 import com.facebook.multitasking.Screens.DocumentScannerScreen
@@ -19,17 +20,17 @@ import com.facebook.multitasking.Screens.ImageProcessingScreen
 import com.facebook.multitasking.Screens.PoseDetectionScreen
 import com.facebook.multitasking.Screens.SelfieSegmentationScreen
 import com.facebook.multitasking.Screens.TextRecognitionScreen
-import com.facebook.multitasking.ui.theme.MultiTaskingTheme
+import com.facebook.multitasking.ui.theme.primaryDark
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         setContent {
-            MultiTaskingTheme {
+            AppTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
                 ) {
                     val navController = rememberNavController()
 
