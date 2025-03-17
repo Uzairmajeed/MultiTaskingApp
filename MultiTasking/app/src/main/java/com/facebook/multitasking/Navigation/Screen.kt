@@ -34,6 +34,9 @@ object ImageProcessingScreen : Screen()
 @Serializable
 object DigitalInkRecognitionScreen : Screen()
 
+@Serializable
+object  ARModelScreen : Screen()
+
 
 
 

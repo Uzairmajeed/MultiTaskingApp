@@ -7,6 +7,12 @@
         android:required="false" />
     <uses-permission android:name="android.permission.CAMERA"/>
 
+    <!-- AR required features -->
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,6 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MultiTasking"
         tools:targetApi="31">
+
+        <meta-data android:name="com.google.ar.core" android:value="required"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -27,7 +35,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+
 
         <!-- Add this within your application tag in AndroidManifest.xml -->
         <provider

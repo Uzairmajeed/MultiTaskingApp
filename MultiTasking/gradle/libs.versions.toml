@@ -1,9 +1,19 @@
 [versions]
 agp = "8.5.2"
+arsceneview = "2.0.1"
+arsceneviewVersion = "2.2.1"
 coilCompose = "2.4.0"
+core = "1.48.0"
+coreVersion = "1.42.0"
 digitalInkRecognition = "18.1.0"
 faceDetection = "16.1.7"
 faceMeshDetection = "16.0.0-beta3"
+filamentAndroid = "1.40.0"
+filamentAndroidVersion = "1.34.1"
+githubArsceneview = "0.10.0"
+gltfioAndroid = "1.52.0"
+googleCore = "1.38.0"
+googleCoreVersion = "1.36.0"
 imageLabeling = "17.0.9"
 kotlin = "1.9.0"
 coreKtx = "1.15.0"
@@ -21,19 +31,32 @@ playServicesMlkitFaceDetection = "17.1.0"
 playServicesMlkitImageLabeling = "16.0.8"
 poseDetection = "18.0.0-beta5"
 poseDetectionAccurate = "18.0.0-beta5"
+qrgenerator = "1.0.1"
+sceneform = "1.20.1"
 segmentationSelfie = "16.0.0-beta6"
 serialization = "1.6.3"
 textRecognition = "16.0.1"
 uiTextGoogleFonts = "1.7.8"
+ux = "1.17.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 androidx-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
+arsceneview = { module = "io.github.sceneview:arsceneview", version.ref = "arsceneview" }
+arsceneview-v0100 = { module = "io.github.sceneview:arsceneview", version.ref = "githubArsceneview" }
+arsceneview-v221 = { module = "io.github.sceneview:arsceneview", version.ref = "arsceneviewVersion" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+core = { module = "com.google.ar:core", version.ref = "core" }
+core-v1360 = { module = "com.google.ar:core", version.ref = "googleCoreVersion" }
+core-v1380 = { module = "com.google.ar:core", version.ref = "googleCore" }
+core-v1420 = { module = "com.google.ar:core", version.ref = "coreVersion" }
 digital-ink-recognition = { module = "com.google.mlkit:digital-ink-recognition", version.ref = "digitalInkRecognition" }
 face-detection = { module = "com.google.mlkit:face-detection", version.ref = "faceDetection" }
 face-mesh-detection = { module = "com.google.mlkit:face-mesh-detection", version.ref = "faceMeshDetection" }
+filament-android = { module = "com.google.android.filament:filament-android", version.ref = "filamentAndroid" }
+filament-android-v1341 = { module = "com.google.android.filament:filament-android", version.ref = "filamentAndroidVersion" }
+gltfio-android = { module = "com.google.android.filament:gltfio-android", version.ref = "gltfioAndroid" }
 image-labeling = { module = "com.google.mlkit:image-labeling", version.ref = "imageLabeling" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -56,8 +79,11 @@ play-services-mlkit-face-detection = { module = "com.google.android.gms:play-ser
 play-services-mlkit-image-labeling = { module = "com.google.android.gms:play-services-mlkit-image-labeling", version.ref = "playServicesMlkitImageLabeling" }
 pose-detection = { module = "com.google.mlkit:pose-detection", version.ref = "poseDetection" }
 pose-detection-accurate = { module = "com.google.mlkit:pose-detection-accurate", version.ref = "poseDetectionAccurate" }
+qrgenerator = { module = "com.github.androidmads:QRGenerator", version.ref = "qrgenerator" }
+sceneform = { module = "com.gorisse.thomas.sceneform:sceneform", version.ref = "sceneform" }
 segmentation-selfie = { module = "com.google.mlkit:segmentation-selfie", version.ref = "segmentationSelfie" }
 text-recognition = { module = "com.google.mlkit:text-recognition", version.ref = "textRecognition" }
+ux = { module = "com.google.ar.sceneform:ux", version.ref = "ux" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -17,6 +17,7 @@ fun Screen.route(): String {
         is DocumentScannerScreen -> "document_scanner"
         is ImageProcessingScreen -> "image_processing"
         is DigitalInkRecognitionScreen-> "ink_recognitions"
+        is ARModelScreen-> "ar_model_screen"
     }
 }
 
@@ -39,6 +40,8 @@ inline fun <reified T : Screen> NavGraphBuilder.composable(
         DocumentScannerScreen::class -> "document_scanner"
         ImageProcessingScreen::class -> "image_processing"
         DigitalInkRecognitionScreen::class-> "ink_recognitions"
+        ARModelScreen::class-> "ar_model_screen"
+
 
         else -> throw IllegalArgumentException("Unknown screen class: ${T::class}")
     }

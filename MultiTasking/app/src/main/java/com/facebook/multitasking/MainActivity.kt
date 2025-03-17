@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
@@ -20,7 +19,6 @@ import com.facebook.multitasking.Screens.ImageProcessingScreen
 import com.facebook.multitasking.Screens.PoseDetectionScreen
 import com.facebook.multitasking.Screens.SelfieSegmentationScreen
 import com.facebook.multitasking.Screens.TextRecognitionScreen
-import com.facebook.multitasking.ui.theme.primaryDark
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,6 +71,10 @@ class MainActivity : ComponentActivity() {
 
                         composable<DigitalInkRecognitionScreen> {
                             DigitalInkRecognitionScreen(navController = navController)
+                        }
+
+                        composable<ARModelScreen> {
+                            ARModelScreen(navController = navController)
                         }
 
 
