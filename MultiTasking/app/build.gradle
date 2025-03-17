@@ -116,7 +116,7 @@ dependencies {
     implementation libs.androidx.ui.text.google.fonts  // Use the same version as your other Compose dependencies
 
 
-
+    implementation 'io.github.sceneview:arsceneview:0.10.0'
 
 
 
