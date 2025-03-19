@@ -8,6 +8,8 @@ import androidx.navigation.compose.composable
 // Function to get route string from Screen object
 fun Screen.route(): String {
     return when (this) {
+        is SplashScreen -> "splash"
+
         is HomeScreen -> "home"
         is TextRecognitionScreen -> "text_recognition"
         is FaceRecognitionScreen -> "face_recognition"
@@ -31,6 +33,7 @@ inline fun <reified T : Screen> NavGraphBuilder.composable(
     noinline content: @Composable (NavBackStackEntry) -> Unit
 ) {
     val route = when (T::class) {
+        SplashScreen::class -> "splash"
         HomeScreen::class -> "home"
         TextRecognitionScreen::class -> "text_recognition"
         FaceRecognitionScreen::class -> "face_recognition"

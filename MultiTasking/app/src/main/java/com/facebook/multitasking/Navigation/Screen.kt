@@ -8,6 +8,9 @@ import kotlinx.serialization.Serializable
 sealed class Screen
 
 @Serializable
+object SplashScreen : Screen()
+
+@Serializable
 object HomeScreen : Screen()
 
 @Serializable

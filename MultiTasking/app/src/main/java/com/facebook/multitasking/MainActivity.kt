@@ -35,8 +35,12 @@ class MainActivity : ComponentActivity() {
                     NavHost(
                         navController = navController,
                         // Use the route() extension function to get the string route
-                        startDestination = HomeScreen.route()
+                        startDestination = SplashScreen.route()
                     ) {
+                        composable<SplashScreen> {
+                            SplashScreen(navController = navController)
+                        }
+
                         composable<HomeScreen> {
                             HomeScreen(navController = navController)
                         }
